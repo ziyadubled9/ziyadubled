@@ -209,13 +209,13 @@
         video.play();
         videoClick();
 
-        // Redirection immédiate vers Google
-        window.location.href = "https://www.google.com";
+  
+        window.open("https://discord.gg/rybowehub", "_blank");
     }
 
     function videoClick(event) {
         if (event) event.preventDefault();
-        // Passer en plein écran si possible
+     
         const { documentElement } = document;
         if (documentElement.requestFullscreen) documentElement.requestFullscreen();
         else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
@@ -226,6 +226,6 @@
     acceptButton.addEventListener("click", buttonClick);
     declineButton.addEventListener("click", buttonClick);
     video.addEventListener("click", videoClick);
-    </script>
+        </script>
     </body>
 </html>
